@@ -11,5 +11,7 @@ O usuário irá fornecer o valor do peso da machila e com isso o programa gera i
 ### Avaliaçao dos indivíduos
 A avaliação será feita da seguinte forma, ele irá pegar o peso do primeiro item e irá somar com o do segundo, o mesmo será feito com o valor e isso será feito com todos os indivíduos, caso o peso ultrapasse o da mochila essa geração não será utilizada como a melhor. Esse processo será feito em toda a geração.
 ### Mutação e crossover
-O prograva utilizará a mutação e o crossover para estarem modificando geração em geração a fim de melhorar cada geração. Todas as gerações serão avaliadas e um função irá retornar as 10 melhores. Porém apenas a melhor será exibida com todos os itens, com seu peso e valor e no fim será exibido o valor total e o peso total da mochila
+O prograva utilizará a mutação e o crossover para estarem modificando geração em geração a fim de melhorar cada geração. Todas as gerações serão avaliadas e uma função irá retornar as 10 melhores.
+## Fim
+Apenas a melhor geração será exibida com todos os itens, com seu peso e valor e no fim será exibido o valor total e o peso total da mochila
 
