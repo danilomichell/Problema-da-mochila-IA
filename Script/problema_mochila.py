@@ -84,7 +84,7 @@ toolbox.register("mate", tools.cxTwoPoint)  # crossover
 toolbox.register("mutate", tools.mutFlipBit, indpb=0.05)  # mutação
 
 # Toobox do método de seleção
-toolbox.register("select", tools.selTournament, tournsize=3)
+toolbox.register("select", tools.selNSGA2)
 
 # tamanho da população
 population = toolbox.populacao(n=800)
