@@ -3,7 +3,6 @@ import random
 from deap import creator, base, tools, algorithms
 
 # Definindo peso máximo da mochila
-random.seed(64)
 PESO_MAXIMO = int(input("Digite o peso máximo da mochila: "))
 print(f"O peso maximo é {PESO_MAXIMO}\n")
 
@@ -87,7 +86,7 @@ toolbox.register("mutate", tools.mutFlipBit, indpb=0.05)  # mutação
 toolbox.register("select", tools.selNSGA2)
 
 # tamanho da população
-population = toolbox.populacao(n=800)
+population = toolbox.populacao(n=500)
 '''def main():
     NGEN = 50
     MU = 50
