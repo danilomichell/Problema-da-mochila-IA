@@ -138,7 +138,7 @@ print()
 print('Peso/valor dos dos itens do melhor individuo')
 for item in getItems(best10[0]):
     print(item)
-print("")
+print()
 
 # Peso e valor total da mochila
 print(f"O peso é {sum(list(map(lambda x: x[1]['peso'], getItems(best10[0]))))}")
