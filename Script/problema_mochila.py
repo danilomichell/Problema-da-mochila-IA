@@ -66,7 +66,7 @@ def avaliador(individuo):
 
 
 # Função de pegar itens
-def getItems(individual):
+def obterItems(individual):
     _items = []
     for index in range(len(individual)):
         if individual[index] > 0.5:
@@ -123,7 +123,7 @@ for i in range(NGEN):
     # usa a toobox de seleção para gerar a nova população
     population = toolbox.select(offspring, k=len(population))
     best = tools.selBest(population, k=1)
-    print(f"Melhor individuos da geração {i+1}")
+    print(f"Melhor individuo da geração {i+1}")
     print(best)
 
 # retorna o melhor individuo da seleção
@@ -136,10 +136,10 @@ print(best10[0])
 print()
 
 print('Peso/valor dos dos itens do melhor individuo')
-for item in getItems(best10[0]):
+for item in obterItems(best10[0]):
     print(item)
 print()
 
 # Peso e valor total da mochila
-print(f"O peso é {sum(list(map(lambda x: x[1]['peso'], getItems(best10[0]))))}")
-print(f"O valor é {sum(list(map(lambda x: x[1]['valor'], getItems(best10[0]))))}")
+print(f"O peso é {sum(list(map(lambda x: x[1]['peso'], obterItems(best10[0]))))}")
+print(f"O valor é {sum(list(map(lambda x: x[1]['valor'], obterItems(best10[0]))))}")
