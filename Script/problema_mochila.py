@@ -111,7 +111,7 @@ population = toolbox.populacao(n=500)
 NGEN = 50
 for i in range(NGEN):
 
-    offspring = algorithms.varAnd(population, toolbox, cxpb=0.7, mutpb=0.2)
+    offspring = algorithms.varAnd(population, toolbox, cxpb=0.5, mutpb=0.1)
 
     # avaliação dos individuos
     fits = toolbox.map(toolbox.evaluate, offspring)
